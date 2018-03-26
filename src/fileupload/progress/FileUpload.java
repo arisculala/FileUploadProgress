@@ -47,6 +47,8 @@ public class FileUpload extends HttpServlet {
 		boolean isMultipart = ServletFileUpload.isMultipartContent(request);
 		System.out.println("Request is multipart: "+isMultipart);
 
+		//Hello adding changes only
+
 		if(isMultipart) {
 			DiskFileItemFactory factory = new DiskFileItemFactory();
 			ServletFileUpload upload = new ServletFileUpload(factory);
